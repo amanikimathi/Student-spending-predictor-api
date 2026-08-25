@@ -20,7 +20,7 @@ model_columns = joblib.load("model_columns.pkl")
 
 class StudentInfo(BaseModel):
     age: int
-    monthly_income: float
+    monthly_allowance: float
     financial_aid: float
     gender: str
     year_in_school: str
@@ -38,7 +38,7 @@ def predict_spending(student: StudentInfo):
     # Build a single-row DataFrame from the submitted data
     input_data = pd.DataFrame([{
         "age": student.age,
-        "monthly_income": student.monthly_income,
+        "monthly_income": student.monthly_allowance,
         "financial_aid": student.financial_aid,
         f"gender_{student.gender}": True,
         f"year_in_school_{student.year_in_school}": True,
