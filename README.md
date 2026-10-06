@@ -9,7 +9,7 @@ A machine learning project that trains a regression model to predict student dis
 
 This is the second half of the Student Spending Predictor project. The [training notebook](https://github.com/amanithomas12/student-spending-predictor) covers the full ML workflow — data cleaning, feature engineering, catching and fixing data leakage, training and comparing Linear Regression and Random Forest models, and honestly evaluating the results.
 
-This repo takes the trained model out of the notebook and serves it through a live FastAPI backend, so it can actually be used — not just described. A simple frontend form was also built locally to demonstrate the model being consumed by a client application, though it isn't currently deployed.
+This repo takes the trained model out of the notebook and serves it through a live FastAPI backend, so it can actually be used,not just described. A simple frontend form was also built locally to demonstrate the model being consumed by a client application, though it isn't currently deployed.
 
 ## Try it
 
